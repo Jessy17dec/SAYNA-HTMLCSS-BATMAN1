@@ -34,7 +34,14 @@ button {
   margin: 0 auto;
 }
 
-body {
+main {
+  background-color: black;
+  color: white;
+  font-family: "Space Grotesk";
+  font-weight: 300;
+}
+
+footer {
   background-color: black;
   color: white;
   font-family: "Space Grotesk";
@@ -72,14 +79,14 @@ nav ul a:hover {
 
 /*Design hero header*/
 
-#hero {
+header {
   background-image: url(../images/Illustrations/Bathome1.png);
   height: 800px;
   background-position: top center;
   background-repeat: no-repeat;
   background-color: black;
   background-size: cover;
-}
+  }
 
 .content {
   display: flex;
@@ -96,7 +103,11 @@ nav ul a:hover {
 }
 
 #hero .texte {
-  font-size: 25px;
+  font-size: 28px;
+}
+
+#hero .content{
+  font-family: "rajdhani";
 }
 
 /*Design bouton dans hero header*/
@@ -113,10 +124,13 @@ nav ul a:hover {
   );
   box-shadow: var(--black-color) 5px 5px 60px;
 }
-#hero .fleche {
+.fleche {
   display: block;
   margin: 0 auto;
-  margin-top: 220px;
+  margin-top: 250px;
+  
+  
+  
 }
 
 /*Design scrolling*/
@@ -168,6 +182,7 @@ nav ul a:hover {
   text-transform: uppercase;
   font-weight: bold;
   margin: 30px 0;
+  margin-top: 120px;
 }
 
 #batman-cinema .description {
