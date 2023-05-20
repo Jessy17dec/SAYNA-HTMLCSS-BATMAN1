@@ -64,9 +64,10 @@ nav ul a:hover {
   color: var(--yellow-color);
 }
 
-.hover:hover{
-color: var(--yellow-color);
-filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) contrast(117%)
+.hover:hover {
+  color: var(--yellow-color);
+  filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg)
+    brightness(115%) contrast(117%);
 }
 
 /*Design hero header*/
@@ -91,7 +92,11 @@ filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) 
 }
 
 #hero .titre {
-  margin: 20px 0;
+  margin: 50px 0;
+}
+
+#hero .texte {
+  font-size: 25px;
 }
 
 /*Design bouton dans hero header*/
@@ -108,7 +113,6 @@ filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) 
   );
   box-shadow: var(--black-color) 5px 5px 60px;
 }
-
 #hero .fleche {
   display: block;
   margin: 0 auto;
@@ -130,9 +134,10 @@ filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) 
   margin-top: 15px;
 }
 
-.scroll .social:hover{
-color: var(--yellow-color);
-filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) contrast(117%)
+.scroll .social:hover {
+  color: var(--yellow-color);
+  filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg)
+    brightness(115%) contrast(117%);
 }
 
 /*Design de la section batman personnage*/
@@ -140,6 +145,17 @@ filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) 
 .batman-personnage {
   display: flex;
   justify-content: space-between;
+}
+
+/*Animation zoom*/
+
+.scale:hover {
+  overflow: hidden;
+  width: 100%;
+  transition: transform 0.1s;
+  -ms-transform: scale(1.1) translate(10px);
+  -webkit-transform: scale(1.1) translate(10px);
+  transform: scale(1.1) translate(10px);
 }
 
 /*Design Batman au cinéma*/
@@ -186,6 +202,15 @@ filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) 
 
 #batman-nemesis .batman-info {
   text-align: center;
+}
+
+#batman-nemesis .nemesis-content {
+  background-image: url(../images/Illustrations/Bathome13.png);
+  background-size: 150px;
+  background-position: relative;
+  background-position: left 190px top 0px;
+  background-repeat: no-repeat;
+  background-color: black;
 }
 
 /*Design Batman-Alliés*/
@@ -280,6 +305,12 @@ filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) 
   color: var(--yellow-color);
 }
 
+#multimedia .image-bande-annonce {
+  width: 70%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
 /*Design formulaire*/
 
 #formulaire {
@@ -342,23 +373,19 @@ filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) 
 }
 
 ::-webkit-input-placeholder {
-  color: grey
-  font-size: 15px;
+  color: grey font-size 15px;
 }
 
 ::-moz-placeholder {
-  color:grey
-  font-size: 15px;
+  color: grey font-size 15px;
 }
 
 ::-ms-input-placeholder {
-  color:grey
-  font-size: 15px;
+  color: grey font-size 15px;
 }
 
 ::placeholder {
-  color: grey
-  font-size: 15px;
+  color: grey font-size 15px;
 }
 
 #formulaire .btn-group {
@@ -389,49 +416,75 @@ input[type="submit"] {
   background: linear-gradient(50deg, grey, red);
 }
 
-#citation{
-    margin: 90px;
+#citation {
+  margin: 90px;
 }
 
-#citation .citation-content{
-    text-align: center;
-    width: 50%;
-    margin: 0 auto;
+#citation .citation-content {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
 }
 
-#citation .citation-auteur{
-    
-    padding-top: 30px;
-    font-size: 14px;
-    font-family: "radjhani";
+#citation .citation-auteur {
+  padding-top: 30px;
+  font-size: 14px;
+  font-family: "radjhani";
 }
 
-#citation .guillemet-close{
-    float: right;
+#citation .guillemet-close {
+  float: right;
 }
 
 /*Design Footer*/
 
-footer{
-    margin-top: 170px;
+footer {
+  margin-top: 170px;
 }
 
-footer .footer-text{
-    text-align: center;
-    font-size: 14px;
+footer .footer-text {
+  text-align: center;
+  font-size: 14px;
 }
 
-footer .footer-social{
-    text-align: center;
-    margin: 50px 0;
-    
+footer .footer-social {
+  text-align: center;
+  margin: 50px 0;
 }
 
-footer .social-item{
-    padding: 15px;
+footer .social-item {
+  padding: 15px;
 }
 
-footer .footer-social .hover:hover{
-color: var(--yellow-color);
-filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg) brightness(115%) contrast(117%)
+footer .footer-social .hover:hover {
+  color: var(--yellow-color);
+  filter: invert(8%) sepia(80%) saturate(6673%) hue-rotate(6deg)
+    brightness(115%) contrast(117%);
+}
+
+/*Design border Body*/
+.up-bar {
+  border-top: rgba(182, 180, 180, 0.156) 2px solid;
+  position: relative;
+  top: 132px;
+  width: 90%;
+  left: 83px;
+}
+
+.right-bar {
+  border-top: rgba(182, 180, 180, 0.156) 2px solid;
+  position: fixed;
+  top: 132px;
+  width: 100%;
+  transform: rotate(90deg);
+  left: 760px;
+}
+
+.left-bar {
+  border-top: rgba(182, 180, 180, 0.156) 2px solid;
+  position: fixed;
+  top: 132px;
+  width: 100%;
+  transform: rotate(90deg);
+  right: 760px;
 }
