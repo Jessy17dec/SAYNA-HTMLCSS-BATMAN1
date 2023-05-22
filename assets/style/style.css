@@ -86,7 +86,7 @@ header {
   background-repeat: no-repeat;
   background-color: black;
   background-size: cover;
-  }
+}
 
 .content {
   display: flex;
@@ -106,7 +106,7 @@ header {
   font-size: 28px;
 }
 
-#hero .content{
+#hero .content {
   font-family: "rajdhani";
 }
 
@@ -123,14 +123,18 @@ header {
     var(--gradient-red)
   );
   box-shadow: var(--black-color) 5px 5px 60px;
+  opacity: 60%;
+  transition: all 0.5s ease-in-out;
 }
+
+.btn:hover {
+  opacity: 100%;
+}
+
 .fleche {
   display: block;
   margin: 0 auto;
   margin-top: 250px;
-  
-  
-  
 }
 
 /*Design scrolling*/
@@ -219,19 +223,25 @@ header {
   text-align: center;
 }
 
-#batman-nemesis .nemesis-content {
+.nemesis-content {
   background-image: url(../images/Illustrations/Bathome13.png);
   background-size: 150px;
-  background-position: relative;
-  background-position: left 190px top 0px;
+  background-position: fixed;
+  background-position: left 170px top 0px;
   background-repeat: no-repeat;
   background-color: black;
+  margin-top: 100px;
+}
+
+.bathome12 {
+  float: right;
+  display: block;
 }
 
 /*Design Batman-Alliés*/
 
 #batman-allies {
-  margin-top: 40px;
+  margin-top: 260px;
 }
 
 #batman-allies .titre {
@@ -324,6 +334,10 @@ header {
   width: 70%;
   margin: 0 auto;
   padding: 40px;
+}
+
+.image-bande-annonce:hover{
+  filter: drop-shadow(0 2px 1.5rem #fff);
 }
 
 /*Design formulaire*/

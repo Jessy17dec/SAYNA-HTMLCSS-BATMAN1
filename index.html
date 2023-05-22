@@ -12,7 +12,7 @@
     <div class="up-bar"></div>
     <div class="left-bar"></div>
     <div class="right-bar"></div>
-    
+
     <header>
       <nav class="container">
         <a href="index.html">
@@ -85,8 +85,6 @@
           alt="logo_bat_flèche_2"
         />
       </div>
-
-      
 
       <!--Deuxième section = Batman au cinéma-->
       <section id="batman-cinema">
@@ -215,6 +213,11 @@
               </div>
             </div>
           </div>
+          <img
+            class="bathome12"
+            src="./assets/images/Illustrations/Bathome12.png"
+            alt="Bathome12"
+          />
         </div>
       </section>
 
@@ -367,24 +370,26 @@
             <label class="titre" for="email">ADRESSE EMAIL</label>
             <input type="email" name="email" placeholder="Mon email" />
             <label class="titre" for="newsletter">NEWSLETTER</label>
-            <label for=""
+            <label for="check" name="check"
               >En cochant cette case vous acceptez de recevoir l’actualité
               concernant les aventures de Batman :</label
             >
             <input type="checkbox" />
 
             <div>
-              <span
-                >Choisissez la fréquence à laquelle vous souhaitez recevoir
-                votre newsletter</span
-              >
-              <span>
-                <img
-                  class="icon"
-                  src="./assets/images/Logos/icon_flèche_2.png"
-                  alt="icon_flèche_2"
-                />
-              </span>
+              <select name="frequence" id="frequence" required>
+                <option disabled selected hidden>
+                  Choisissez la fréquence à laquelle vous souhaitez recevoir
+                  votre newsletter
+                </option>
+                <option value="value1">Une fois par semaine</option>
+                <option value="value2">
+                  Une fois toutes les deux semaines
+                </option>
+                <option value="value3">Une fois par mois</option>
+                <option value="value4">Une fois tous les trois mois</option>
+                <option value="value5">Une fois tous les six mois</option>
+              </select>
             </div>
 
             <div>
@@ -393,12 +398,9 @@
 
             <div>
               <div class="btn-group">
-                <input type="radio" id="film" />
-                <label for="film">Des Films</label>
-                <input type="radio" id="comics" />
-                <label for="comics">Des Comics</label>
-                <input type="radio" id="tout" />
-                <label for="tout">De Tout</label>
+                <button class="btn">Des Films</button>
+                <button class="btn">Des Comics</button>
+                <button class="btn">De tout</button>
               </div>
 
               <p class="titre">MESSAGE</p>
@@ -409,7 +411,13 @@
                 placeholder="Laissez un commentaire pour la communauté"
               ></textarea>
 
-              <input type="submit" value="CONFIRMER" />
+              <button
+                class="confirm-btn"
+                type="button"
+                onclick="afficherPopup()"
+              >
+                CONFIRMER
+              </button>
             </div>
           </form>
         </div>
@@ -436,6 +444,21 @@
             <div class="citation-auteur">
               The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
             </div>
+          </div>
+
+          <div class="rond">
+            <div class="cercle"></div>
+            <div class="cercle"></div>
+            <div class="cercle"></div>
+            <div class="cercle"></div>
+            <div
+              class="cercle"
+              style="background-color: rgb(103, 103, 207)"
+            ></div>
+            <div class="cercle"></div>
+            <div class="cercle"></div>
+            <div class="cercle"></div>
+            <div class="cercle"></div>
           </div>
 
           <div class="guillemet-close">
